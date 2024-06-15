@@ -1,0 +1,13 @@
+body > section,
+section.error > p {
+	display: none;
+}
+	
+	/* Show appropritate section */
+	.redirecting .redirecting,
+	.error .error,
+	.no-js .no-js,
+	.json .json,
+	.not-found .not-found {
+		display: block;
+	}
