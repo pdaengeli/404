@@ -38,14 +38,14 @@ document.body.className = 'redirecting';
 //var slug = location.pathname.split('/').pop()
 //var slug = location.pathname.slice(1);
 var slug = location.pathname.split('/').splice(2).join('/')
-console.log("slug: " + slug)
+
 xhr({
 	src: '/404/entries.json',
 	onsuccess: function () {
 		var slugs = JSON.parse(this.responseText);
-console.log("slugs: " + slugs)
+
 		var hash = slugs[slug];
-console.log("hash: " + hash)
+
 		if (hash) {
 			// Redirect
 			var url = hash.indexOf('http') == 0? hash : hash;
@@ -53,7 +53,7 @@ console.log("hash: " + hash)
 			location.href = url;
 		}
 		else {
-console.log("error: " + 'not-found')			
+
 			document.body.className = 'error not-found';
 		}
 	},
