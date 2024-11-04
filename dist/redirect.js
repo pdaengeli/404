@@ -42,9 +42,9 @@ xhr({
 	src: '/404/entries.json',
 	onsuccess: function () {
 		var slugs = JSON.parse(this.responseText);
-
+console.log(slugs)
 		var hash = slugs[slug];
-
+console.log(hash)
 		if (hash) {
 			// Redirect
 			var url = hash.indexOf('http') == 0? hash : hash;
@@ -52,6 +52,7 @@ xhr({
 			location.href = url;
 		}
 		else {
+console.log('not-found')			
 			document.body.className = 'error not-found';
 		}
 	},
