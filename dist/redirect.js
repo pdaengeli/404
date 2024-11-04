@@ -37,7 +37,7 @@ document.body.className = 'redirecting';
 
 //var slug = location.pathname.split('/').pop()
 //var slug = location.pathname.slice(1);
-var slug = location.href.split('/')[1]
+var slug = location.substring(location.indexOf('/') + 1)
 console.log("slug: " + slug)
 xhr({
 	src: '/404/entries.json',
