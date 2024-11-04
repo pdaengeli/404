@@ -1,5 +1,6 @@
 {
 	"foo.jpg" : "https://iiif.ub.unibe.ch/image/v3/ca719a60-48e3-4810-8171-ec784d3ab3b0/full/max/0/default.jpg",
 	"bar.jpg" : "https://iiif.ub.unibe.ch/image/v3/f2d31abc-3553-47c9-a326-fed328c96c23/full/max/0/default.jpg",
-	"baz.jpg" : "https://iiif.ub.unibe.ch/image/v3/ab65302f-e22a-4be1-aa36-13bdfda0d366/full/max/0/default.jpg"
+	"baz.jpg" : "https://iiif.ub.unibe.ch/image/v3/ab65302f-e22a-4be1-aa36-13bdfda0d366/full/max/0/default.jpg",
+	"image/v3/schwarzenbach/smallform_0411_001.png/info.json" : "https://iiif.ub.unibe.ch/image/v3/dsl_dev/smallform_0411_001.png/info.json"
 }
