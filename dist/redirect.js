@@ -39,7 +39,7 @@ var slug = location.pathname.split('/').pop()
 //var slug = location.pathname.slice(1);
 
 xhr({
-	src: 'entries.json',
+	src: '/404/entries.json',
 	onsuccess: function () {
 		var slugs = JSON.parse(this.responseText);
 
